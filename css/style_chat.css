@@ -54,7 +54,6 @@ ul {
 	width: 100%
 }
 
-
 li {
 	display: flex;
 	flex-direction: row;
@@ -86,7 +85,6 @@ footer figure {
 	margin: 0px;
 	order: 2;
 	display: inline-flex;
-
 }
 
 img {
@@ -108,5 +106,3 @@ textarea {
 	border: none;
 	margin: 10% 5% 10% 10%;
 }
-
-vertical-align
