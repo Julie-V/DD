@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Karla';
+	src: url('../fonts/Karla-Regular.ttf');
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  font-family: Karla, Arial, sans-serif;
+  background-image: url(../images/bgdialog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ccc;
+  height: 100%;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+header {
+	flex: 1;
+	flex-grow: 1;
+	text-align: center;
+}
+
+#content {
+  flex: 2;
+  flex-grow: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+li {
+	display: flex;
+}
+
+.self {
+	background-color: white;
+	display: flex;
+	align-self: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+}
+
+.other {
+	background-color: white;
+	display: flex;
+	align-self: flex-end;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+footer {
+	flex: 3;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer figure {
+	margin: 0px;
+	order: 2;
+	display: inline-flex;
+
+}
+
+img {
+	max-width: auto;
+	max-height: 50px;
+	width: auto;
+	z-index: 1;
+	margin-top: -45%;
+	margin-right: 15%
+
+}
+
+textarea {
+	display: inline-flex;
+	margin: 0;
+	order: 1;
+	flex-grow: 2;
+	background-color: black;
+	font-family: Karla, Arial, sans-serif;
+	color: white;
+	border: none;
+	margin: 10% 5% 10% 10%;
+}

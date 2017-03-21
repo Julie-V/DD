@@ -1,0 +1,137 @@
+@font-face {
+	font-family: 'Karla';
+	src: url('../fonts/Karla-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Karla';
+	src: url('../fonts/Karla-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+ }
+
+@font-face {
+	font-family: 'Karla';
+	src: url('../fonts/Karla-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Karla';
+	src: url('../fonts/Karla-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+html {
+	height: 100%;
+   	width: 100%;
+}
+
+body {
+	font-family: Karla, Arial, sans-serif;
+	background-image: url(../images/bgchat.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #ccc;
+	height: 100%;
+   	width: 100%;
+   	margin: 0px 0px 0px 0px;
+}
+
+h1 {
+	font-size: 550%;
+	color: white;
+	margin: 0px;
+	margin-top: 20%;
+	z-index: 1;
+	position: relative;
+}
+
+#chaticon {
+	width: 100%;
+	height: auto;
+	position: fixed;
+}
+
+#chaticon img {
+	max-width: 100px;
+	z-index: -1;
+	margin: -15% 30% 0px 30%;
+}
+
+
+#login_container {
+	background-color: white;
+	width: 80%;
+	height: 35%;
+	margin: 40% 10% 30% 10%;
+}
+
+form {
+	width: 100%;
+	height: 100%;
+}
+
+label {
+	display: block;
+	font-size: 80%;
+	color: #ad807d;
+	padding: 10% 5% 5% 0px;
+	margin: 0px 0px 5% 10%;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #ad807d;
+	padding: 5% 5% 5% 0px;
+	margin: 0px 0px 25% 10%;
+}
+
+#login_bottom {
+	background-color: #00a0ff;
+	height: 25%;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+}
+
+#login_bottom figure {
+	margin: auto;
+	width: 20%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 10%
+}
+
+#login_bottom img {
+	width: 20%;
+	height: auto;
+	margin: 0px;
+	z-index: 1;
+	order: 1;
+	justify-content: space-between;
+}
+
+#login_bottom h4 {
+	width: 80%;
+	color: white;
+	order: 2;
+	justify-content: space-between;
+	text-align: right;
+	padding-right: 10%
+}
+
+input:placeholder-shown {
+	color: black;
+}
+
