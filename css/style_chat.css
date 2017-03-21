@@ -47,25 +47,31 @@ header {
   flex-wrap: wrap;
 }
 
+ul {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0px;
+	width: 100%
+}
+
+
 li {
 	display: flex;
+	flex-direction: row;
+	margin: 5% 5% 5% 5%;
 }
 
 .self {
-	background-color: white;
-	display: flex;
-	align-self: flex-start;
-	align-items: flex-start;
 	justify-content: flex-start;
-
 }
 
 .other {
-	background-color: white;
-	display: flex;
-	align-self: flex-end;
-	align-items: flex-end;
 	justify-content: flex-end;
+}
+
+.message{
+	background-color: white;
+	padding: 0px 5% 0px 5%;
 }
 
 footer {
@@ -87,10 +93,8 @@ img {
 	max-width: auto;
 	max-height: 50px;
 	width: auto;
-	z-index: 1;
-	margin-top: -45%;
-	margin-right: 15%
-
+	z-index: 2;
+	margin-top: -50%;
 }
 
 textarea {
@@ -104,3 +108,5 @@ textarea {
 	border: none;
 	margin: 10% 5% 10% 10%;
 }
+
+vertical-align
