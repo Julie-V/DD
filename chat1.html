@@ -7,44 +7,36 @@
 	<link rel="stylesheet" type="text/css" href="css/style_chat.css">
 </head>
 <body>
-<header>
-    <h6>Тестовое задание</h6>
-</header>
+	<header>
+    	<h6>Тестовое задание</h6>
+	</header>
 
   <div id="content">
-  	<ul>
+  	<ul id="chat">
   		<li class="self">
   			<div class="message">
-  				<p>Hello, world!</p>
+  				<p class="usermessage">Hello, world!</p>
+  				<p class="username">Username</p>
   			</div>
   		</li>
 
   		<li class="other">
   			<div class="message">
-  				<p>Fuck off</p>
+  				<p class="usermessage">Fuck off</p>
+  				<p class="username">Username</p>
   			</div>
   		</li>
 
-  		<li class="self">
-  			<div class="message">
-  				<p>Hello, world!</p>
-  			</div>
-  		</li>
-
-  		<li class="other">
-  			<div class="message">
-  				<p>Fuck off</p>
-  			</div>
-  		</li>
   	</ul>
   </div>
-
+<div id="alert"></div>
   <footer>
   	<figure>
-  		<img src="images/send-button.png">
+  		<img src="images/send-button.png" id="send">
   	</figure>
-        <textarea placeholder="Enter your message"></textarea>
+        <textarea id="entermessage" placeholder="Enter your message" maxlength="50"></textarea>
   </footer>
-
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/addmessages.js"></script>
 </body>
 </html>

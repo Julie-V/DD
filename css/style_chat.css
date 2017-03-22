@@ -43,21 +43,23 @@ header {
   flex-grow: 10;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 
 ul {
 	display: flex;
 	flex-direction: column;
 	padding-left: 0px;
-	width: 100%
+	width: 100%;
+	align-content: space-between;
+	justify-content: space-between;
 }
 
 li {
 	display: flex;
 	flex-direction: row;
-	margin: 5% 5% 5% 5%;
+	min-height: 70px;
 }
 
 .self {
@@ -70,8 +72,34 @@ li {
 
 .message{
 	background-color: white;
-	padding: 0px 5% 0px 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	padding: 15% 5% 15% 5%;
+	margin: 5%;
 }
+
+.usermessage {
+	flex: 1;
+	margin: 0px;
+}
+
+.username {
+	flex: 2;
+	margin: 0px;
+	color: #ad807d;
+	font-size: 70%;
+}
+
+.self div p {
+	align-self: flex-start;
+}
+
+.other div p {
+	align-self: flex-end;
+}
+
 
 footer {
 	flex: 3;
@@ -92,7 +120,7 @@ img {
 	max-height: 50px;
 	width: auto;
 	z-index: 2;
-	margin-top: -50%;
+	margin-top: -35%;
 }
 
 textarea {
@@ -105,4 +133,8 @@ textarea {
 	color: white;
 	border: none;
 	margin: 10% 5% 10% 10%;
+}
+
+#alert {
+	z-index: 2;
 }
