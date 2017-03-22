@@ -13,19 +13,21 @@
 			<img src="images/chaticon.png" alt="chat icon">
 		</figure>
 	</div>
-
+<div id="alerttt"></div>
 		<div id="login_container">
 			<form>
 				<label>USERNAME</label>
-    			<input type="text" placeholder="Enter Username" name="username" required>
+    			<input type="text" id="userinput" placeholder="Enter Username" name="username" required>
     			<div id="login_bottom">
     				<figure>
-    					<img src="images/play-button.png">
+    					<img src="images/play-button.png" id="login-btn" onclick="getUsername()">
     				</figure>
     				<h4>Get Started</h4>
     			</div>
     		</form>
 		</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/addmessages.js"></script>
 </body>
 </html>
